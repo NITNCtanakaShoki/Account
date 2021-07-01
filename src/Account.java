@@ -22,17 +22,17 @@ public class Account {
     }
 
     private boolean isSufficientAmount(int amount ) {
-        return this.balance >= amount;
+        return balance >= amount;
     }
 
     void deposit( int amount ) {
-        this.balance += amount;
+        balance += amount;
     }
 
 
 
     boolean withdraw( int amount ) {
-        if ( !this.isSufficientAmount( amount ) ) return false;
+        if ( !isSufficientAmount( amount ) ) return false;
 
         this.balance -= amount;
         return true;
